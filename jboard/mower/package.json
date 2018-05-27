@@ -1,0 +1,17 @@
+{
+  "name": "mower",
+  "version": "1.0.0",
+  "description": "scrape Africa Job Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "mongodb": "^2.0.33",
+    "kerberos": "~0.0.17",
+    "request": "^2.87.0"
+  }
+}

@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=ZKwrOXl5TDI
+https://www.youtube.com/watch?v=Do_Hsb_Hs3c
+
+
+npm install --save express
+npm install -g express-generator
+npm install jade
+express <nameOfSite>
+
+http://www.newthinktank.com/2016/01/nodejs-mongodb-tutorial/
+
+https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7
+
+
+Dynamically generated content from procedures leveraging AJAX, client-side logic, and other async procedures
+
+parsing dynamic content from AJAX, client-side logic, and other async procedures
+
+https://codeshare.io/5zbdRk
+
+db.test_users.remove( {"_id": ObjectId("4d512b45cc9374271b02ec4f")});
+
+db.joblist.createIndex({"title": 1, "joburl":1}, {unique:true, sparse:true});
+db.products.createIndex( { "item": 1, "stock": 1 } )
+
+
+Mongo Closed Connection
+https://stackoverflow.com/questions/26346089/mongodb-server-sockets-closed-no-fix-found?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa

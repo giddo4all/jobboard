@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h3.
+    Jobs
+  span Search
+  span &nbsp;
+  input#input_name(type="text", placeholder=" search keyword", name="search")
+  ul
+    each job, i in joblist 
+      li#job_list_item
+        a(href=job.joburl) #{job.title} 
+       p #{job.company}
+        
+        
+    br 
+    br 
+    a(href='/') Back to Main Page
