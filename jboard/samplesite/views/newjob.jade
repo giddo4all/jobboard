@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h3= title
+  form#form_add_new_job(name="newjob", method="post", action="/newjob")
+    span Job Title
+    span &nbsp;&nbsp;&nbsp;
+    br
+    input#input_title(type="text", placeholder="", name="job_title")
+    br
+    br
+    span Company
+    span &nbsp;&nbsp;&nbsp;
+    br
+    input#input_company(type="text", placeholder="", name="company")
+    br
+    br
+    span Job URL
+    span &nbsp;&nbsp;&nbsp;
+    br
+    input#input_joburl(type="text", placeholder="", name="joburl")
+    br
+    br
+    button#submit_student(type="submit") submit
+    br 
+    br 
+    a(href='/') Back to Main Page

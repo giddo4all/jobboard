@@ -1,8 +1,28 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  color: rgb(168, 128, 192);
 }
 
 a {
   color: #00B7FF;
+}
+
+span{
+    width: 50%;
+    position: static;
+    left: 40%;
+    color: black;
+    font-weight: bold;
+  	font: 14px "Times New Roman"
+}
+input {
+  width: 50%;
+  font-weight: bold;
+  font-family: "Courier New"
+}
+
+button {
+	display: block;
 }

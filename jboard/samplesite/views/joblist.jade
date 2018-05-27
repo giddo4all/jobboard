@@ -9,8 +9,10 @@ block content
   ul
     each job, i in joblist 
       li#job_list_item
-        a(href=job.joburl) #{job.title} 
        p #{job.company}
+        br
+        a(href=job.joburl) #{job.title} 
+
         
         
     br 

@@ -76,7 +76,7 @@ router.get('/joblist', function(req, res){
     // Get the documents collection
     var collection = db.collection('joblist');
 
-    // Find all students
+    // Find all jobs
     collection.find({}).toArray(function (err, result) {
       if (err) {
         res.send(err);
@@ -139,6 +139,54 @@ router.post('/addstudent', function(req, res){
 
             // Redirect to the updated student list
             res.redirect("thelist");
+          }
+
+          // Close the database
+          db.close();
+        });
+
+      }
+    });
+
+  });
+
+
+
+
+// Route to the page we can add students from using newstudent.jade
+router.get('/newjob', function(req, res){
+    res.render('newjob', {title: 'Publish Job' });
+});
+
+router.post('/newjob', function(req, res){
+
+    // Get a Mongo client to work with the Mongo server
+    var MongoClient = mongodb.MongoClient;
+
+    // Define where the MongoDB server is
+    var url = 'mongodb://localhost:27017/samplesite';
+
+    // Connect to the server
+    MongoClient.connect(url, function(err, db){
+      if (err) {
+        console.log('Unable to connect to the Server:', err);
+      } else {
+        console.log('Connected to Server');
+
+        // Get the documents collection
+        var collection = db.collection('joblist');
+
+        // Get the student data passed from the form
+        var jobData = {title: req.body.job_title, company: req.body.company, joburl: req.body.joburl};
+
+        // Insert the student data into the database
+        collection.insert([jobData], function (err, result){
+          if (err) {
+            console.log(err);
+          } else {
+
+            // Redirect to the updated student list
+            res.redirect("joblist");
           }
 
           // Close the database
