@@ -29,10 +29,18 @@ Mongo Closed Connection
 https://stackoverflow.com/questions/26346089/mongodb-server-sockets-closed-no-fix-found?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 
 http://callbackhell.com/
+https://github.com/maxogden/art-of-node#callbacks
 
+RETURN DATA FROM FUNCTION
+https://stackoverflow.com/questions/7255956/return-results-from-a-function-javascript-nodejs
+
+PASS ARG TO CALL BACK
+https://samwize.com/2013/09/01/how-you-can-pass-a-variable-into-callback-function-in-node-dot-js/
 
 Lecture
 https://www.youtube.com/watch?v=TlB_eWDSMt4
+
+"crawl": "concurrently --kill-others \"npm install\" \"node index.js\" \"node chv.js\""
 
 
 module.export.log = log;
@@ -40,6 +48,17 @@ module.export = log;
 const logger = require('./logger')
 
 
+phantom & Casper JSON Tutorial
+https://www.youtube.com/watch?v=Cqic-ZKPFyk
+https://www.youtube.com/watch?v=NES9RtRLWpY
+
+http://phantomjs.org/examples/
+C:\Users\gideo\AppData\Roaming\npm\node_modules\casperjs\bin\casperjs
+
+C:\Users\gideo\jobboard\jboard\gleaner
+
+
+page.settings.userAgent = "Mozilla/5.0  (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko)
 
 Enhancement
 
@@ -47,3 +66,18 @@ Enhancement
 * search function using search bar
 * grouping by country
 * JSON object for expiration
+
+
+Website
+http://westafricancareers.com
+
+
+block footer
+  footer
+    li
+      a(href="#") Team
+    li
+      a(href="#") Privacy
+    p
+      | company name <br> 
+      | &copy; 2014, All Rights Reserved

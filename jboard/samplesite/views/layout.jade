@@ -3,5 +3,20 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    img.banner(src='/images/banner2.jpg')
+    div.banner.header
   body
-    block content
+    #content
+      block content
+    block footer
+      br
+      div.banner.footer
+      br
+      div.footer
+        li
+          a(href="#") Team
+        li
+          a(href="#") Privacy
+        p
+          | JOBBERLINE <br> 
+          | &copy; 2018, All Rights Reserved

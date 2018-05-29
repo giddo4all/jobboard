@@ -4,14 +4,19 @@
   "description": "scrape Africa Job Data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crawl": "npm install && node index.js && node chv.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "mongodb": "^2.0.33",
     "kerberos": "~0.0.17",
+    "mongodb": "^2.0.33",
+    "node-gyp": "^3.6.2",
     "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }

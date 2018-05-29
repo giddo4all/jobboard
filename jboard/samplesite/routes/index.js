@@ -11,7 +11,7 @@ var mongodb = require('mongodb');
 // render says to use the views/index.jade file for the layout
 // and to set the value for title to 'Express'
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Job Site' });
+  res.render('index', { title: 'Jobberline' });
 });
 
 router.get('/thelist', function(req, res){

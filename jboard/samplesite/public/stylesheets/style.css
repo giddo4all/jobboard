@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: transparent;
-  color: rgb(168, 128, 192);
+  color: #C70039;
 }
 
 a {
@@ -25,4 +25,34 @@ input {
 
 button {
 	display: block;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}
+
+div.banner.header {
+    height: 10px;
+    background-color: #C70039;
+}
+
+div.banner.footer {
+    height: 5px;
+    background-color: #FFC300;
+}
+
+img.banner {
+  height: 50%;
+  width: 100%;
+}
+
+li.footer {
+  display: inline-block;
+}
+
+div.footer {
+  font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  text-align: center;
 }

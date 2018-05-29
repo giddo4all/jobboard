@@ -9,6 +9,7 @@ block content
   ul
     each job, i in joblist 
       li#job_list_item
+       img.logo(src='#{job.image}')
        p #{job.company}
         br
         a(href=job.joburl) #{job.title} 

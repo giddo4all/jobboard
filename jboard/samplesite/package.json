@@ -12,9 +12,10 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
-    "erberos": "~0.0.17",
+    "kerberos": "~0.0.17",
     "mongodb": "~2.0.33",
     "morgan": "~1.9.0",
+    "node-gyp": "^3.6.2",
     "serve-favicon": "^2.5.0"
   }
 }
