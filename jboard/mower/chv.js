@@ -7,6 +7,7 @@ var mongoUtil = require("./mongo-write.js");
 var url ="https://jobs.chevron.com/search/?q=&locationsearch=nigeria";
 var urlPrefix ="https://jobs.chevron.com";
 var mongoURL = 'mongodb://localhost:27017/samplesite';
+// var mongoURL = 'mongodb://localhost:27017/jobber';
 
 
 

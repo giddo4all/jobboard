@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var mongodb = require('mongodb');
+var alert = require("dialog");
+const fileUpload = require('express-fileupload');
 
 /* GET home page. */
 // Defines the root route. router.get receives a path and a function
@@ -79,6 +81,7 @@ router.get('/joblist', function(req, res){
     // Find all jobs
     collection.find({}).toArray(function (err, result) {
       if (err) {
+        // alert("Job cannot be Publish " + err);
         res.send(err);
       } else if (result.length) {
         res.render('joblist',{
@@ -177,12 +180,18 @@ router.post('/newjob', function(req, res){
         var collection = db.collection('joblist');
 
         // Get the student data passed from the form
-        var jobData = {title: req.body.job_title, company: req.body.company, joburl: req.body.joburl};
+        var imageurl="";
+        if(req.body.image == null) {
+          imageurl = "/images/placeholder-logo.png"
+        }
+        var jobData = {title: req.body.job_title, company: req.body.company, joburl: req.body.joburl, image: imageurl};
 
         // Insert the student data into the database
         collection.insert([jobData], function (err, result){
           if (err) {
+            alert.err("Job cannot be published probably due to duplicate Entry");
             console.log(err);
+            // res.redirect("joblist");
           } else {
 
             // Redirect to the updated student list
@@ -197,5 +206,21 @@ router.post('/newjob', function(req, res){
     });
 
   });
+
+router.post('/uploadLogo', function(req, res) {
+  if (!req.files)
+    return res.status(400).send('No files were uploaded.');
+ 
+  // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+  let sampleFile = req.files.sampleFile;
+ 
+  // Use the mv() method to place the file somewhere on your server
+  sampleFile.mv('/images/filename.jpg', function(err) {
+    if (err)
+      return res.status(500).send(err);
+ 
+    res.send('File uploaded!');
+  });
+});
 
 module.exports = router;

@@ -72,6 +72,9 @@ Website
 http://westafricancareers.com
 
 
+**/samplesite/data/** text eol=lf
+
+
 block footer
   footer
     li
@@ -81,3 +84,15 @@ block footer
     p
       | company name <br> 
       | &copy; 2014, All Rights Reserved
+
+
+  git config --global user.email "gideonaina@yahoo.com"
+  git config --global user.name "Gideon Aina"
+
+Get files names only containing the pattern -"samplsite" (i.e option -l) and do this recursive (option -r - nesting down all directory).
+Replace the occurence of that string with with "jobber" 
+  sed -i 's@samplesite@jobber@g' $(grep -rl .  -e '[.]*samplesite[.]*')
+
+
+  BOWER
+  https://www.youtube.com/watch?v=lAUncPg_FVw

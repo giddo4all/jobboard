@@ -138,6 +138,7 @@ var mongoUtil = require("./mongo-write.js");
 var url ="https://careers.mtnonline.com/Vacancy.aspx";
 var urlPrefix ="https://careers.mtnonline.com/";
 var mongoURL = 'mongodb://localhost:27017/samplesite';
+// var mongoURL = 'mongodb://localhost:27017/jobber';
 // var jobs = [];
 // request(url, function(err, response, html) {
 // 	if (!err){

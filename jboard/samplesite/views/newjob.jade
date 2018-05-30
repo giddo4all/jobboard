@@ -3,25 +3,31 @@ extends layout
 block content
   h3= title
   form#form_add_new_job(name="newjob", method="post", action="/newjob")
-    span Job Title
-    span &nbsp;&nbsp;&nbsp;
+    span.default Job Title
+    span.default &nbsp;&nbsp;&nbsp;
     br
-    input#input_title(type="text", placeholder="", name="job_title")
-    br
-    br
-    span Company
-    span &nbsp;&nbsp;&nbsp;
-    br
-    input#input_company(type="text", placeholder="", name="company")
+    input.default#input_title(type="text", placeholder="", name="job_title")
     br
     br
-    span Job URL
-    span &nbsp;&nbsp;&nbsp;
+    span.default Company
+    span.default &nbsp;&nbsp;&nbsp;
     br
-    input#input_joburl(type="text", placeholder="", name="joburl")
+    input.default#input_company(type="text", placeholder="", name="company")
+    br
+    br
+    span.default Job URL
+    span.default &nbsp;&nbsp;&nbsp;
+    br
+    input.default#input_joburl(type="text", placeholder="", name="joburl")
+    br
+    br
+    //span.default Upload Company Logo
+    span.default &nbsp;&nbsp;&nbsp;
+    br
+    //form#uploadForm(ref='uploadForm', action='/uploadLogo', method='post', enctype='multipart/form-data')
+        //input(type='file', name='sampleFile')
     br
     br
     button#submit_student(type="submit") Submit
     br 
-    br 
-    a(href='/') Back to Main Page
+    br
