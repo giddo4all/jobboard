@@ -1,6 +1,6 @@
 
 
-var fs = require("fs");
+// var fs = require("fs");
 // calendars = ["Gideon", "Sharon", "Alero", "Aina"];
 // var array = [];
 // calendars.forEach(function(item) {
@@ -31,12 +31,12 @@ var fs = require("fs");
 
 // console.log(ds);
 
-var myArray = ['1apple','2bonini','3Orange','4Coco'];
+// var myArray = ['1apple','2bonini','3Orange','4Coco'];
 
-myArray.forEach(function(index, tr, kj) {
-  console.log("index is: " + index +  " 2nd is: " + tr + " 3rd is: " + kj);
-  console.log("Length is" + myArray.length);
-});
+// myArray.forEach(function(index, tr, kj) {
+//   console.log("index is: " + index +  " 2nd is: " + tr + " 3rd is: " + kj);
+//   console.log("Length is" + myArray.length);
+// });
 
 
 // myArray.forEach(function(index, tr, ret){
@@ -44,9 +44,9 @@ myArray.forEach(function(index, tr, kj) {
 // });
 
 
-function ret() {
-	console.log("inner function has");
-};
+// function ret() {
+// 	console.log("inner function has");
+// };
 
 // function ary(){ 
 // 	for (i in myArray) {
@@ -62,3 +62,13 @@ function ret() {
 // 	// }
 
 // });
+
+
+var PropertiesReader = require('properties-reader');
+var properties = PropertiesReader('../properties.file');
+
+var propertiesCount = properties.length;
+var env = properties.path().dev;
+console.log(env.url.local.sample);
+
+console.log(propertiesCount);

@@ -92,7 +92,49 @@ block footer
 Get files names only containing the pattern -"samplsite" (i.e option -l) and do this recursive (option -r - nesting down all directory).
 Replace the occurence of that string with with "jobber" 
   sed -i 's@samplesite@jobber@g' $(grep -rl .  -e '[.]*samplesite[.]*')
+              grep -rnw .  -e '[.]*samplesite[.]*' | sed -i 's@samplesite@jobber@g'
+            sed -i 's@samplesite@jobber@g' < $(grep -r .  -e '[.]*samplesite[.]*')
+            
+            find . -type f -name '*.js' -print0 | xargs -0 grep -l "custom_integration"
+            sed -i 's@samplesite@jobber@g' test.log
 
 
   BOWER
   https://www.youtube.com/watch?v=lAUncPg_FVw
+
+
+  Sending command line arguments to npm script
+https://stackoverflow.com/questions/11580961/sending-command-line-arguments-to-npm-script?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+Exposing your local Node.js app to the world
+https://www.pluralsight.com/guides/exposing-your-local-node-js-app-to-the-world
+
+How to map your domain and subdomains to Amazon EC2 instance or Amazon route 53
+https://www.youtube.com/watch?v=pjA9MyzUJNQ
+
+Best practices when running Node.js with port 80 (Ubuntu / Linode) [closed]
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+
+AWS Commands
+***************&&&&&&&&&&&&&&&&&&&&&&&&&&&&&************************
+
+sudo yum update -y
+sudo yum install -y git
+touch mongodb-org-3.6.repo
+
+echo "[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+
+sudo yum install -y mongodb-org
+sudo service mongod start
+sudo chkconfig mongod on
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum install -y nodejs
+ git clone https://github.com/giddo4all/jobboard.git
+(cd jobboard/jboard/mower && npm run crawl)
+(cd jobboard/jboard/samplesite && npm start)
+

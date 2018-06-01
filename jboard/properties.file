@@ -1,0 +1,9 @@
+[dev]
+url.local.sample = mongodb://localhost:27017/samplesite
+url.local.jobber = mongodb://localhost:27017/jobber
+url.global.jobber = mongodb://localhost:27017/samplesite
+
+[prod]
+url.local.sample = mongodb://jobberline.com:27017/samplesite
+url.local.jobber = mongodb://jobberline.com:27017/jobber
+url.global.jobber = mongodb://jobberline.com:27017/samplesite
