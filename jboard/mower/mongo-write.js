@@ -53,10 +53,10 @@ function storeData(error, dbConnectObj, collectionName, dataJSON){
         console.log(error);
     } else {
       console.log(result);
+    }
       if(index+1 >= dataJSON.length){
         dbConnectObj.close();
       }
-    }
 
   });
         
