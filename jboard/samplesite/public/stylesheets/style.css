@@ -29,6 +29,7 @@ button.default {
 img.logo {
   height: 20px;
   width: 20px;
+  margin-right:10px;
 }
 
 div.banner.header {

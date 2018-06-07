@@ -7,14 +7,10 @@ block content
   span &nbsp;
   input#input_name(type="text", placeholder=" search keyword", name="search")
   ul
-    each job, i in joblist 
+    each job, i in joblist
+      br 
       li#job_list_item
-       img.logo(src='#{job.image}')
-       p #{job.company}
-        br
-        a(href=job.joburl) #{job.title} 
-
-        
-        
+        img.logo#IdName(src="#{job.image}" alt="#{job.company}")
+        a(href=job.joburl) #{job.title}
     br 
     br 
