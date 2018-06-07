@@ -112,7 +112,7 @@ https://www.pluralsight.com/guides/exposing-your-local-node-js-app-to-the-world
 How to map your domain and subdomains to Amazon EC2 instance or Amazon route 53
 https://www.youtube.com/watch?v=pjA9MyzUJNQ
 
-Best practices when running Node.js with port 80 (Ubuntu / Linode) [closed]
+Best practices when running Node.js with port 80 (Ubuntu / Linode)
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
 
 AWS Commands
@@ -132,9 +132,42 @@ gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.re
 sudo yum install -y mongodb-org
 sudo service mongod start
 sudo chkconfig mongod on
+(mongo && db.joblist.createIndex({"title": 1, "joburl":1}, {unique:true, sparse:true});)
 curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
 sudo yum install -y nodejs
  git clone https://github.com/giddo4all/jobboard.git
 (cd jobboard/jboard/mower && npm run crawl)
 (cd jobboard/jboard/samplesite && npm start)
 
+
+
+
+CRON JOB
+
+find -name "node"
+
+*/1 * * * * /usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+
+
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/test run test
+
+crontab -e
+
+CRON Syntax
+https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
+Test CRON
+http://cron.schlitt.info/
+
+See Email from cron job
+cat /var/spool/mail/ec2-user
+
+30 11 * * * 
+
+http://www.applydirect.com.au/
+
+
+RENDER JADE
+https://codepen.io/Mildwind/pen/rOebvr
+
+PUT AD ON Website
+https://www.youtube.com/watch?v=eRruBVPYr9w

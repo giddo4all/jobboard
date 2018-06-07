@@ -90,7 +90,7 @@ router.get('/joblist', function(req, res){
           "joblist" : result
         });
       } else {
-        res.send('No documents found');
+        res.send('No jobs to display');
       }
       //Close connection
       db.close();
