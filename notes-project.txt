@@ -174,3 +174,4 @@ https://www.youtube.com/watch?v=eRruBVPYr9w
 
 Call back vs Promises
 https://www.youtube.com/watch?v=ubUQfeWSYk4
+https://medium.com/dev-bits/writing-neat-asynchronous-node-js-code-with-promises-32ed3a4fd098
