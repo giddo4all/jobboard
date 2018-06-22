@@ -1,0 +1,739 @@
+git -v
+git -version
+git --version
+sudo yum update -y
+sudo yum install git -y
+sudo yum git -y
+sudo yum update -y
+cd /etc
+ls -la
+cd yum.repos.d/
+ls
+vim mongodb-org-3.6.repo
+ls
+cat mongodb-org-3.6.repo 
+pwd
+sudo rm mongodb-org-3.6.repo 
+ls
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+touch mongodb-org-3.6.repo
+sudo touch mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+rm mongodb-org-3.6.repo 
+ls
+sudo rm mongodb-org-3.6.repo 
+ls
+cd ..
+cd ~
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc"
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ cat /etc/yum.repos.d/ mongodb-org-3.6.repo 
+ cat /etc/yum.repos.d/mongodb-org-3.6.repo 
+sudo yum install -y mongodb-org
+echo"[mongodb-org-3.6]"| sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+echo "[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo yum install -y mongodb-org
+sudo yum install -y git
+sudo service mongod start
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+cat /etc/mongodb.conf
+ls /etc
+sudo cat /etc/mongodb.conf
+sudo cat /etc/mongod.conf
+ls /var/lib/mongo
+sudo service mongod stop
+ls
+rm mongodb-org-3.6.repo 
+sudo rm mongodb-org-3.6.repo 
+mkdir dataDB
+ls
+sudo service mongod --dbpath ~/dataDB start
+sudo service mongod start --dbpath ~/dataDB
+ls dataDB/
+ls dataDB/*
+cd dataDB/
+ls
+sudo service mongod start
+sudo service mongod stop
+ls /var/lib/mongo
+sudo cat /etc/mongod.conf
+sudo vim /etc/mongod.conf
+sudo cat /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+ls usr/local/var/mongodb/journal/
+ls usr/local/var/mongod/journal/
+ls usr/local/var/mongod
+ls usr/local/var/mongodb
+ls usr/local/var
+ls /usr/local/var/mongodb/journal/
+ls /usr/local/var/mongod/journal/
+ls /usr/local/var/
+ls /usr/local/var
+ls /usr/local
+ls /
+ls /var/
+ls /var/local/
+ls /local/
+ls /db
+ls /var/db
+sudo vim /etc/mongod.conf
+sudo less /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+sudo service mongod --dpath
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo touch /var/log/mongodb/mongod.log
+
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo mongod start
+sudo less /etc/mongod.conf
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod -dbpath=~/dataDB start
+sudo service mongod --dbpath=~/dataDB start
+sudo service mongod --dbpath ~/dataDB
+sudo service mongod start --dbpath=~/dataDB
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod start 
+echo "" | sudo tee /var/log/mongodb/mongod.log
+pwd
+sudo service mongod start --dbpath 
+sudo service mongod stop
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo service mongod 
+sudo service mongod start --dbpath /home/ec2-user/dataDB
+sudo less /var/log/mongodb/mongod.log
+ls
+sudo less /var/log/mongodb/mongod.log
+ls /var/lib/mongo
+mongo
+ls -l /var/lib/mongo
+ls -l /var/lib
+ls -l
+cd ..
+ls -l
+git clone https://github.com/giddo4all/jobboard.git
+ls
+cd jobboard/
+ls
+cd jboard/
+ls
+pwd
+cd mower
+ls
+node -version
+node --version
+node index.js 
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum install -y nodejs
+node --version
+ls
+less index.js 
+node index.js
+less package.json 
+npm run crawl
+cd  ..
+cd mower/
+cd ..
+cd..
+cd ..
+(cd jobboard/jboard/samplesite && npm start)
+(cd jobboard/jboard/samplesite && npm instal && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start -- --port=80)
+(cd jobboard/jboard/samplesite && npm install && node ./bin/www --port=80)
+git -v
+git -version
+git --version
+sudo yum update -y
+sudo yum install git -y
+sudo yum git -y
+sudo yum update -y
+cd /etc
+ls -la
+cd yum.repos.d/
+ls
+vim mongodb-org-3.6.repo
+ls
+cat mongodb-org-3.6.repo 
+pwd
+sudo rm mongodb-org-3.6.repo 
+ls
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+touch mongodb-org-3.6.repo
+sudo touch mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+rm mongodb-org-3.6.repo 
+ls
+sudo rm mongodb-org-3.6.repo 
+ls
+cd ..
+cd ~
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc"
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ cat /etc/yum.repos.d/ mongodb-org-3.6.repo 
+ cat /etc/yum.repos.d/mongodb-org-3.6.repo 
+sudo yum install -y mongodb-org
+echo"[mongodb-org-3.6]"| sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+echo "[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo yum install -y mongodb-org
+sudo yum install -y git
+sudo service mongod start
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+cat /etc/mongodb.conf
+ls /etc
+sudo cat /etc/mongodb.conf
+sudo cat /etc/mongod.conf
+ls /var/lib/mongo
+sudo service mongod stop
+ls
+rm mongodb-org-3.6.repo 
+sudo rm mongodb-org-3.6.repo 
+mkdir dataDB
+ls
+sudo service mongod --dbpath ~/dataDB start
+sudo service mongod start --dbpath ~/dataDB
+ls dataDB/
+ls dataDB/*
+cd dataDB/
+ls
+sudo service mongod start
+sudo service mongod stop
+ls /var/lib/mongo
+sudo cat /etc/mongod.conf
+sudo vim /etc/mongod.conf
+sudo cat /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+ls usr/local/var/mongodb/journal/
+ls usr/local/var/mongod/journal/
+ls usr/local/var/mongod
+ls usr/local/var/mongodb
+ls usr/local/var
+ls /usr/local/var/mongodb/journal/
+ls /usr/local/var/mongod/journal/
+ls /usr/local/var/
+ls /usr/local/var
+ls /usr/local
+ls /
+ls /var/
+ls /var/local/
+ls /local/
+ls /db
+ls /var/db
+sudo vim /etc/mongod.conf
+sudo less /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+sudo service mongod --dpath
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo touch /var/log/mongodb/mongod.log
+
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo mongod start
+sudo less /etc/mongod.conf
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod -dbpath=~/dataDB start
+sudo service mongod --dbpath=~/dataDB start
+sudo service mongod --dbpath ~/dataDB
+sudo service mongod start --dbpath=~/dataDB
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod start 
+echo "" | sudo tee /var/log/mongodb/mongod.log
+pwd
+sudo service mongod start --dbpath 
+sudo service mongod stop
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo service mongod 
+sudo service mongod start --dbpath /home/ec2-user/dataDB
+sudo less /var/log/mongodb/mongod.log
+ls
+sudo less /var/log/mongodb/mongod.log
+ls /var/lib/mongo
+mongo
+ls -l /var/lib/mongo
+ls -l /var/lib
+ls -l
+cd ..
+ls -l
+git clone https://github.com/giddo4all/jobboard.git
+ls
+cd jobboard/
+ls
+cd jboard/
+ls
+pwd
+cd mower
+ls
+node -version
+node --version
+node index.js 
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum install -y nodejs
+node --version
+ls
+less index.js 
+node index.js
+less package.json 
+npm run crawl
+cd  ..
+cd mower/
+cd ..
+cd..
+cd ..
+(cd jobboard/jboard/samplesite && npm start)
+(cd jobboard/jboard/samplesite && npm instal && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start -- --port=80)
+(cd jobboard/jboard/samplesite && npm install && node ./bin/www --port=80)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+(cd jobboard/jboard/samplesite && npm install && node ./bin/www --port=80)
+git -v
+git -version
+git --version
+sudo yum update -y
+sudo yum install git -y
+sudo yum git -y
+sudo yum update -y
+cd /etc
+ls -la
+cd yum.repos.d/
+ls
+vim mongodb-org-3.6.repo
+ls
+cat mongodb-org-3.6.repo 
+pwd
+sudo rm mongodb-org-3.6.repo 
+ls
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+touch mongodb-org-3.6.repo
+sudo touch mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+rm mongodb-org-3.6.repo 
+ls
+sudo rm mongodb-org-3.6.repo 
+ls
+cd ..
+cd ~
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc"
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ls /etc/yum.repos.d
+echo "name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+ cat /etc/yum.repos.d/ mongodb-org-3.6.repo 
+ cat /etc/yum.repos.d/mongodb-org-3.6.repo 
+sudo yum install -y mongodb-org
+echo"[mongodb-org-3.6]"| sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+echo "[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" | sudo tee /etc/yum.repos.d/mongodb-org-3.6.repo
+sudo yum install -y mongodb-org
+sudo yum install -y git
+sudo service mongod start
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+cat /etc/mongodb.conf
+ls /etc
+sudo cat /etc/mongodb.conf
+sudo cat /etc/mongod.conf
+ls /var/lib/mongo
+sudo service mongod stop
+ls
+rm mongodb-org-3.6.repo 
+sudo rm mongodb-org-3.6.repo 
+mkdir dataDB
+ls
+sudo service mongod --dbpath ~/dataDB start
+sudo service mongod start --dbpath ~/dataDB
+ls dataDB/
+ls dataDB/*
+cd dataDB/
+ls
+sudo service mongod start
+sudo service mongod stop
+ls /var/lib/mongo
+sudo cat /etc/mongod.conf
+sudo vim /etc/mongod.conf
+sudo cat /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+ls usr/local/var/mongodb/journal/
+ls usr/local/var/mongod/journal/
+ls usr/local/var/mongod
+ls usr/local/var/mongodb
+ls usr/local/var
+ls /usr/local/var/mongodb/journal/
+ls /usr/local/var/mongod/journal/
+ls /usr/local/var/
+ls /usr/local/var
+ls /usr/local
+ls /
+ls /var/
+ls /var/local/
+ls /local/
+ls /db
+ls /var/db
+sudo vim /etc/mongod.conf
+sudo less /etc/mongod.conf
+sudo service mongod start
+sudo service mongod stop
+sudo service mongod start
+sudo service mongod --dpath
+cat /var/log/mongodb/mongod.log
+sudo cat /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo touch /var/log/mongodb/mongod.log
+
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo less /var/log/mongodb/mongod.log
+sudo mongod start
+sudo less /etc/mongod.conf
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod -dbpath=~/dataDB start
+sudo service mongod --dbpath=~/dataDB start
+sudo service mongod --dbpath ~/dataDB
+sudo service mongod start --dbpath=~/dataDB
+sudo less /var/log/mongodb/mongod.log
+sudo service mongod start 
+echo "" | sudo tee /var/log/mongodb/mongod.log
+pwd
+sudo service mongod start --dbpath 
+sudo service mongod stop
+echo "" | sudo tee /var/log/mongodb/mongod.log
+sudo service mongod 
+sudo service mongod start --dbpath /home/ec2-user/dataDB
+sudo less /var/log/mongodb/mongod.log
+ls
+sudo less /var/log/mongodb/mongod.log
+ls /var/lib/mongo
+mongo
+ls -l /var/lib/mongo
+ls -l /var/lib
+ls -l
+cd ..
+ls -l
+git clone https://github.com/giddo4all/jobboard.git
+ls
+cd jobboard/
+ls
+cd jboard/
+ls
+pwd
+cd mower
+ls
+node -version
+node --version
+node index.js 
+curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+sudo yum install -y nodejs
+node --version
+ls
+less index.js 
+node index.js
+less package.json 
+npm run crawl
+cd  ..
+cd mower/
+cd ..
+cd..
+cd ..
+(cd jobboard/jboard/samplesite && npm start)
+(cd jobboard/jboard/samplesite && npm instal && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+(cd jobboard/jboard/samplesite && npm install && npm start -- --port=80)
+(cd jobboard/jboard/samplesite && npm install && node ./bin/www --port=80)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+(cd jobboard/jboard/samplesite && npm install && node ./bin/www --port=80)
+(cd jobboard/jboard/samplesite && npm install && npm start)
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+(cd jobboard/jboard/samplesite && npm install && npm start)
+mongo
+curl localhost:3000
+cd jobboard/jboard/samplesite/
+ls
+sudo vim bin/www 
+curl localhost:3000
+curl localhost:80
+curl localhost:3000
+mongo
+(mongo && db.joblist.createIndex({"title": 1, "joburl":1}, {unique:true, sparse:true});)
+mongo && use samplesite
+mongo && use samplesite && db.joblist.createIndex({"title": 1, "joburl":1}, {unique:true, sparse:true})
+mongo && use samplesite && db.joblist.createIndex("{"title": 1, "joburl":1}, {unique:true, sparse:true}")
+ls
+cd jobboard/jboard/
+ls
+cd samplesite/
+ls
+ps
+mongo
+npm install pm2 -g
+sudo npm install pm2 -g
+cat package
+cat package.json 
+pm2 start
+pm2 start app.js 
+curl localhost:3000
+pm2 stop app.js 
+pm2 list
+pm2 start npm -- start
+curl localhost:3000
+pm2 stop npm -- start
+git pull
+pm2 start npm -- start
+pm2 stop npm -- start
+git pull
+pm2 start npm -- start
+git pull
+cd jobboard/jboard/
+git pull
+pm2 npm -- stop
+pm2 restart npm -- start
+ls
+cd /
+find -name "node"
+sudo find -name "node"
+sudo find -name ".nvm"
+ls /usr/bin/node 
+ls /usr/bin/node/ 
+cat /usr/bin/node/ 
+cat /usr/bin/nod
+cat /usr/bin/node
+sudo find -name "node"
+sudo find -name "npm"
+cd ~/jobboard/jboard/test/
+ls
+cat package.json 
+npm test
+npm run test
+npm install
+/usr/bin/npm run test
+/usr/lib/node_modules/npm run test
+./usr/lib/node_modules/npm/bin/npm run test
+cd ../mower/
+ls
+pwd
+cd /
+/usr/bin/npm run test /home/ec2-user/jobboard/jboard/test
+/usr/bin/npm run test /home/ec2-user/jobboard/jboard/test/
+/usr/bin/npm run test /home/ec2-user/jobboard/jboard/test/package.json
+/usr/bin/npm run /home/ec2-user/jobboard/jboard/test/package.json test
+less /home/ec2-user/jobboard/jboard/test/package.json
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/test run test
+cd ~
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+mongo
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+mongo
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+cd jobboard
+ls
+git pull
+cd~
+cd ~
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+crontab -e
+sudo service crond start
+crontab -e
+date
+mongo
+crontab -e
+mongo
+crontab -e
+ls /var/spool/mail/ec2-user
+ls /var/spool/mail/ec2-user/
+cat /var/spool/mail/root
+ls -la /var/spool/mail/
+cat /var/spool/mail/ec2-user
+echo "" | sudo tee /var/spool/mail/ec2-user
+cat /var/spool/mail/ec2-user
+mongo
+cd jobboard
+git pull
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+cat /var/spool/mail/ec2-user
+mongo
+/usr/bin/npm --prefix /home/ec2-user/jobboard/jboard/mower run crawl
+cd jobboard/jboard/samplesite/views/
+vim joblist.jade 
+git ch joblist.jade
+git status
+git checkout joblist.jade 
+vim joblist.jade 
+cd..
+cd ..
+ls
+cd public/stylesheets/
+ls
+vim style.css 
+git status
+cd ..
+git add .
+git status
+git commit -m "Update joblist display to be one line"
+git push
+git status
+cd jobboard/jboard/
+ls
+cd samplesite/
+cd views/
+ls
+vim joblist.jade 
+cd jobboard/jboard/
+ls
+cd mower/
+mongo
+npm run crawal
+npm run crawl

@@ -1,75 +1,95 @@
-var mongodb = require('mongodb');
-var MongoClient = mongodb.MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 
-// function dbwrite(mongoURL, tyt) {
-
-//   MongoClient.connect(mongoURL, function(err, db){
-//   if (err) {
-//     console.log('Unable to connect to the Server:', err);
-//   } else {
-//     console.log('Connected to Server');
-//     var collection = db.collection('joblist');
-//       	            // Insert the student data into the database
-//     tyt.forEach(function(value) {
-//           console.log("value is: " + value.toString());
-//     collection.insert(value, function (err, result){
-//     if (err) {
-//        	console.log(err);
-//     } else {
-// 			console.log(result);
-// 		}
-//  		});
-//         // db.close();
-//     });
-
-//     }
-// // db.close();
-// });
-
-// }
-
-
-
-function dbwrite(collectionObj, data, mongoURL) {
-  MongoClient.connect(mongoURL, function(error, db){
-   storeData(error, db, collectionObj, data)
-  });
-}
-
-
-
-
-function storeData(error, dbConnectObj, collectionName, dataJSON){
-  if (error) {
-    console.log('Unable to connect to the Server:', error);
-  } else {
-    console.log('Connected to Server');
-    var collection = dbConnectObj.collection(collectionName);
-    dataJSON.forEach(function(value, index) {
-    console.log("value is: " + value.toString());
-
-    collection.insert(value, function logResult (error, result){
-    if (error) {
-        console.log(error);
-    } else {
-      console.log(result);
-    }
-      if(index+1 >= dataJSON.length){
-        dbConnectObj.close();
-      }
-
-  });
-        
-    });
-
+function dbwrite(collectionName, data, mongoURL){
+  let collectionObject;
+  let dbConnectObj;
+    dbConnect(mongoURL)
+    .then((db) => {
+      dbConnectObj=db;
+      let collectionObj = db.collection(collectionName);
+      collectionObject = collectionObj;
+      return insertData(collectionObj, data);
+    })
+    .then((value) => {
+      return closeConnection(dbConnectObj);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
   }
-}
+  
+  
+  let dbConnect = function (mongoURL){
+    return new Promise(function(resolve, reject){
+      let dbConnectObj;
+      MongoClient.connect(mongoURL, function(error, db){
+        if (!error) {
+          console.log('Connected to Server');
+          resolve(db);
+        } else {
+          console.log('Unable to connect to the Server:', error);
+          reject(error);
+        }
+      });
+    });
+  }
+  
+  
+  let clearTable = function(dbConnectObj, collectionName) {
+    return new Promise(function(resolve, reject){
+      let collectionObj = dbConnectObj.collection(collectionName);
+      console.log("Cleaning Table");
+      collectionObj.remove({});
+      console.log("Table Dropped");
+      resolve(collectionObj);
+    });
+  }
+  
 
-function closeConnection() {
-  // dbConnection.close()
-  console.log("To close Connection Here");
-}
+
+  function dropTable(collectionName, mongoURL){
+    let collectionObject;
+    let dbConnectObj;
+      dbConnect(mongoURL)
+      .then((db) => {
+        dbConnectObj = db;
+        return clearTable(dbConnectObj, collectionName);
+      })
+      .then((value) => {
+        return closeConnection(dbConnectObj);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    }
+  
+  
+    let insertData = function(collectionObj, value){
+      return new Promise(function(resolve, reject){
+        collectionObj.insertMany(value, {w: 1}, function (error, result){
+          if (!error) {
+              console.log(result);
+              resolve(result);
+          } else {
+            console.log(error);
+            reject(error);
+          }
+        });
+      });
+    }
+  
+
+  
+  
+  
+  let closeConnection = function (dbConnection) {
+    console.log("Closing DB Connection");
+    return new Promise(function(resolve, reject){
+    dbConnection.close();
+    resolve("DB Connection is closed");
+    });
+  }
 
 
-
+exports.dropTable = dropTable;
 exports.dbstore = dbwrite;

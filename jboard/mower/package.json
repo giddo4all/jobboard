@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "crawl": "npm install && node index.js && node chv.js"
+    "crawl": "npm install && node dropTable.js && node index.js && node chv.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "foreach-promise": "0.0.1",
+    "foreachasync": "^5.1.2",
     "kerberos": "~0.0.17",
     "mongodb": "^2.0.33",
     "node-gyp": "^3.6.2",
