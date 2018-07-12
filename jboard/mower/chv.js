@@ -37,7 +37,7 @@ function createData(htmlData, cb) {
 		let jobTitle = eachJob.text();
 		let jobUrl = urlPrefix + eachJob.attr('href');
 		let jobData = { title: jobTitle, company: "Chevron", location: "Nigeria", joburl: jobUrl, image: chevronLogo, tags: [] };
-		if (jobUrl.search("/job/NG") != -1 || jobUrl.search("/job/Nigeria") != -1) {
+		if (jobUrl.search("/job/Lagos") != -1 || jobUrl.search("/job/PH") != -1) {
 			wheat.push(jobData);
 		}
 	});
