@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "crawl": "npm install && node dropTable.js && node index.js && node chv.js"
+    "crawl": "npm install && node dropTable.js && node mtn.js && node chv.js && node ge.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
+    "cheerio-advanced-selectors": "^2.0.1",
+    "chrome-launcher": "^0.10.2",
+    "chrome-remote-interface": "^0.25.6",
     "foreach-promise": "0.0.1",
     "foreachasync": "^5.1.2",
     "kerberos": "~0.0.17",
@@ -19,6 +22,7 @@
     "request": "^2.87.0"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1"
+    "concurrently": "^3.5.1",
+    "fs": "0.0.1-security"
   }
 }

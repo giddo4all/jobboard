@@ -178,3 +178,16 @@ https://medium.com/dev-bits/writing-neat-asynchronous-node-js-code-with-promises
 
 How to Use Javascript Promises - Power Explanation
 https://www.youtube.com/watch?v=104J7_HyaG4
+
+
+Getting Started with Headless Chrome in Node.js
+https://www.sitepoint.com/headless-chrome-node-js/
+
+Coding pad with JS runtime 
+https://codestitch.io/e2a5c5c6#
+
+Web Chat
+https://tlk.io/
+
+Render HTML and CSS
+http://scratchpad.io/fantastic-mind-5649
