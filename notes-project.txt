@@ -191,3 +191,9 @@ https://tlk.io/
 
 Render HTML and CSS
 http://scratchpad.io/fantastic-mind-5649
+
+
+
+Bookshelf and Knex
+https://travishorn.com/what-did-i-learn-this-week-knex-js-bookshelf-js-95d3490e3a6f
+https://www.sitepoint.com/getting-started-bookshelf-js/
